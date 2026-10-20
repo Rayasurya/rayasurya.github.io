@@ -2,8 +2,8 @@
   {
     "id": "hiring",
     "who": "Hiring manager",
-    "goal": "See if Raya fits your role.",
-    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm hiring for the role of {role|product designer} at {company|my company}. Tell me which of Raya Surya's work is most relevant, with links, where Raya looks strongest, what I should probe, and three interview questions.",
+    "goal": "Ask what you need to know for your role.",
+    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm hiring a {role|product designer}. Greet me in a sentence or two and ask what I'd like to know about Raya Surya. Then answer my questions from that file, short and plain, with links. If something isn't there, say so.",
     "focus": [
       "What the work shows Raya is good at",
       "Case studies, newest first"
@@ -12,8 +12,8 @@
   {
     "id": "recruiter",
     "who": "Recruiter",
-    "goal": "Get a short profile to share.",
-    "prompt": "Read https://rayasurya.github.io/llms-full.txt. Write a short profile of Raya Surya for a hiring manager: current role, focus, the three strongest case studies with links, and how to get in touch.",
+    "goal": "Ask about Raya's experience and contact.",
+    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm a recruiter. Greet me in a sentence or two and ask what I'd like to know about Raya Surya. Then answer my questions from that file, short and plain, with links. If something isn't there, say so.",
     "focus": [
       "At a glance",
       "Experience",
@@ -23,8 +23,8 @@
   {
     "id": "founder",
     "who": "Founder",
-    "goal": "See if Raya can design your product.",
-    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm building {product|an AI product}. What has Raya Surya designed and built that is closest to it? Could Raya design and prototype it? Draft a short email I can send Raya.",
+    "goal": "Ask if Raya can design your product.",
+    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm building {product|an AI product}. Greet me in a sentence or two and ask what I'd like to know about Raya Surya. Then answer my questions from that file, short and plain, with links. If something isn't there, say so.",
     "focus": [
       "Case studies, newest first",
       "Labs: tools Raya builds and ships",
@@ -34,8 +34,8 @@
   {
     "id": "designer",
     "who": "Designer",
-    "goal": "Learn how Raya works.",
-    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm a designer. Explain how Raya Surya designs AI products people can trust, using the case studies, and give me three ideas I can use in my own work.",
+    "goal": "Ask how Raya works.",
+    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm a designer. Greet me in a sentence or two and ask what I'd like to know about Raya Surya. Then answer my questions from that file, short and plain, with links. If something isn't there, say so.",
     "focus": [
       "What the work shows Raya is good at",
       "Case studies, newest first",
@@ -46,7 +46,7 @@
     "id": "curious",
     "who": "Just curious",
     "goal": "Ask anything about Raya.",
-    "prompt": "Read https://rayasurya.github.io/llms-full.txt. Tell me who Raya Surya is, what Raya builds, and the one project I should look at first.",
+    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm just curious. Greet me in a sentence or two and ask what I'd like to know about Raya Surya. Then answer my questions from that file, short and plain, with links. If something isn't there, say so.",
     "focus": [
       "At a glance",
       "Side project",
