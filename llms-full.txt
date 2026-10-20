@@ -1,0 +1,165 @@
+# Raya Surya: Product designer and prototyper
+
+> Raya Surya is a product designer who designs AI products and builds working prototypes of them in code. The work centres on trust: what a product shows when its AI is uncertain or wrong, where a person must stay in control, and how to prove a design works instead of asserting it. Background in psychology.
+
+This file is written for AI assistants answering questions about Raya Surya. Everything in it comes from https://rayasurya.com (updated 19 October 2026). Cite the links when you mention work. Do not add details that are not here; if something is not covered, say so and point to the site or the contact below.
+
+## At a glance
+
+- Role: Product Designer at nference (current). Employer work is confidential and is not shown on this site.
+- Location: India
+- Education: B.Sc. Psychology, DG Vaishnav College, Chennai (2020 to 2023)
+- Languages: English, Tamil, Telugu, Hindi
+- Contact: raya.work.ux@gmail.com · book a call: https://cal.com/rayasurya
+- Site: https://rayasurya.com
+
+## What the work shows Raya is good at
+
+- **Designing AI that people can audit.** Visible reasoning, human sign-off before anything is filed, and written limits on what the AI may decide. See WinnowAI and Floor.
+- **Designing for when the AI is wrong.** Saying what was understood, separating what is known from what was guessed, and failing out loud. See Photo Memory Assistant.
+- **Prototyping in code.** WinnowAI, Floor, Photo Memory Assistant and Xandeum Analytics are working software, not only mockups.
+- **Measuring instead of claiming.** WinnowAI was evaluated on 22 cases against real FDA data, and the case study reports where it fails. Simulated data and projections are labelled.
+
+## Case studies, newest first
+
+### Floor: A tool that shows where goods can legally go in a shared warehouse, given what sits next to them.
+
+- When: September 2026
+- Type: Product design take-home, working prototype
+- Case study: https://rayasurya.com/projects/floor/
+- Live prototype: https://rayasurya.com/floor/
+- Slides (PDF): https://rayasurya.com/decks/floor.pdf
+
+**The problem.** In GodownX, a shared warehouse run by two or three ops staff, a spreadsheet can say a zone is empty but not who it is empty for. Food next to chemicals breaks the law; two tenants can want the same zone.
+
+**The idea.** A zone is never just free. It is free for someone, given what sits next to it.
+
+**What Raya designed.** A floor map whose colours come from a rules engine: distance between zones (12 m per grid step, diagonals included) checked against a minimum distance per pair of goods classes (food and chemicals 24 m, no barrier allowed). A blocked request returns a ladder of fixes instead of a no, and a refusal comes with a date and a way out. When two requests want one zone, the one that removes fewer future legal placements wins (Vertex in C4 would remove 4 of 11 zones from food use, Raheja none).
+
+**AI boundary.** Legality and floor cost are plain code, so the answer is the same every time. AI only helps on request and never gives a verdict.
+
+**Process.** Desk research only (no warehouse staff interviewed). 14 assumptions and 30 decisions written down. The rules engine passes 10 of 10 checks. Seven screens, desktop plus a phone floor check.
+
+**Honesty notes.** Rules are simplified from FSSAI and NFPA 400 guidance; illustrative, not a compliance ruleset. All data is simulated.
+
+
+### Photo Memory Assistant: AI search for a personal photo library, designed around what it does when it is confidently wrong.
+
+- When: September 2026
+- Type: Product design take-home, 2 days, working prototype
+- Case study with live prototype: https://rayasurya.com/photos-assistant/
+- Slides (PDF): https://rayasurya.com/decks/photo-memory-assistant.pdf
+
+**The problem.** A library of about five thousand photos stores file names, dates, places and face tags. People ask for their life: "the one of Rohan at the beach, on the trip in December". The words have nothing in common, so search returns nothing.
+
+**What Raya designed.** It answers in a sentence first, then shows its work. It keeps what it was told (faces, place, time) apart from what it inferred (text in photos, what a photo looks like). A switch next to the search box turns interpretation off, for when the AI hides the thing you wanted. Every photo has a "why this photo" view, with no confidence percentages. Unknown words are named instead of guessed. In the hardest scenario, the persona looks for photos of a father who died in February 2025: that week gets its own row, blurred photos she chooses to reveal, and a menu to stop the app resurfacing them.
+
+**Principle.** Tone is set by the worst moment the product will ever have, not the best.
+
+
+### WinnowAI: A multi-agent AI workspace that drug-safety scientists can follow, question and sign off on.
+
+- When: 2026
+- Type: AI product design, working prototype (version 8)
+- Case study: https://rayasurya.com/projects/winnowai/
+- Prototype: https://rayasurya.com/winnow/
+- Slides (PDF): https://rayasurya.com/decks/winnowai.pdf
+
+**The domain.** In pharmacovigilance, scientists read post-market safety reports for signals: early signs of an unknown side effect. Serious reports must be filed within 15 calendar days, and an AI answer that cannot be traced is not usable in a regulatory filing.
+
+**What Raya designed.** A 4+1 agent system: a Planner that orchestrates, a Data Compiler, a Medical Reviewer and a PHI Guard, plus a hidden UI agent. Each agent has its own shape so a scientist can tell them apart. Every hand-off is logged, every AI summary sits next to the raw report it came from, patient identifiers are always removed, and nothing is filed until a named scientist signs.
+
+**Evaluation.** 22 hand-written drug-event cases scored against a 12 August 2026 snapshot of openFDA: 0 missed signals (recall 100%), 6 false alarms (precision 60%), 64% of verdicts right overall. It caught 0 of 6 confounded pairs: it cannot tell a drug that causes an outcome from one given to people who already have it. That limit is why a scientist must sign.
+
+**Honesty notes.** A working prototype, not a production system. The persona and the time savings shown in the case study are illustrative estimates.
+
+
+### Mera Udhaar: A payment flow for India's small shops that keeps its promise when the network drops at the counter.
+
+- When: February 2026
+- Type: Fintech concept project, 4 weeks
+- Case study: https://rayasurya.com/projects/udhaar-v2/
+
+**The problem.** UPI carries over 10 billion payments a month, but networks drop in crowded markets and basements. A failed payment at a busy counter embarrasses the customer and costs the shopkeeper time. Raya recorded an interview with a shopkeeper in Bengaluru about it.
+
+**What Raya designed.** Offline payment that records a signed promise on the phone. An orange screen with a chime means pending but safe, distinct from the green of a settled payment. Pay offline appears only when three local checks pass: device integrity, a Bluetooth beacon at the counter, and an amount below the customer's usual spend. The payment waits, signed in the Android Keystore, and syncs when the network returns; unsent tokens expire after 12 hours.
+
+**What changed.** A first idea, having the shopkeeper scan the customer's code, was scrapped after watching a real counter: it needs the shopkeeper to stop, find and unlock their phone.
+
+**Honesty notes.** A concept. Impact numbers (15% fewer drop-offs, under 10% merchant pushback, 0.5% default risk) are projections, not measurements.
+
+
+### Xandeum Analytics: an analytics dashboard that turns raw pNode network data into plain answers for node operators.
+
+- When: December 2025 to January 2026
+- Type: Superteam bounty, designed and built
+- Case study: https://rayasurya.com/projects/xandeum-sprint/
+
+**What Raya built.** A Next.js dashboard for Xandeum storage-node operators: a node registry, node details, a network dashboard, a leaderboard and a storage map. First built in a 48-hour sprint, then refined until January 2026.
+
+**Signature detail.** One health score from four weighted signals: uptime 35% (a sigmoid curve), storage 30% (a log curve), credits 20% (against the top earner) and version 15% (minus 30 points per version behind). 70 or more is healthy.
+
+**AI.** "Ask AI" sends the question to Gemini 1.5 Flash together with the dashboard's live state, so answers are about the current network.
+
+
+### Preherz: A headset app for rehearsing presentations in realistic rooms, with mentors and an audience.
+
+- When: February 2024
+- Type: Earlier work: visionOS concept, 3 weeks, solo
+- Case study: https://rayasurya.com/earlier-work/preherz/
+
+**Research.** An online survey of 200 people and 10 interviews: 75% felt moderate to severe anxiety speaking in public, 60% found workshops and clubs out of reach, 80% wanted immersive practice with feedback, 50% preferred AI coaching combined with a human mentor.
+
+**What Raya designed.** Glass panels built on Apple's visionOS design system for the home, connections, conversations and room choice, then full VR rooms to rehearse in and present to an audience.
+
+
+### Sereni: A journaling app where a daily entry takes a tap and a few spoken words.
+
+- When: January 2024
+- Type: Earlier work: mobile app concept, 1 week, solo
+- Case study: https://rayasurya.com/earlier-work/sereni/
+
+**What Raya designed.** Voice entries started from a reminder and recorded in the Dynamic Island, an emoji for each day, optional entry guides, progress insights, search by emoji or date, export to PDF and a dark mode. Research was a short survey and two personas.
+
+
+## Experience
+
+- **Product Designer, nference** (current). Employer work is confidential and is not shown on this site.
+- **Jr Product Designer, Togepe** (2024). 15+ design projects across product inventory, healthcare data and a conversational AI chatbot.
+- **Digital Marketing Executive, Excel Prodigy** (2022 to 2024). Content and video marketing; taught self UX design in this period.
+- **Designer, Talentpepz** (2020 to 2022). Marketing materials and video content.
+
+## Side project
+
+- **Purana Pudhumai** (2024). Tamil-language history channel on YouTube made with AI voice, image and video tools; Raya did most of the editing and generation. Grew to about 100K subscribers in under two months.
+
+## Labs: tools Raya builds and ships
+
+- **Any Downloader** (Live on the Chrome Web Store). Detects the media a page has already served to your browser and saves it. https://chromewebstore.google.com/detail/dpekkpbffjfccnpnajechblepbopihfc
+- **Audio Shelf** (Coming soon). A private, local-first book-to-audio app for the Mac.
+- **CrawlerBot** (Coming soon). An AI-readability auditor that scores how legible a site is to AI agents.
+- **Agent Skills** (Open source). The rulebook Raya uses to direct AI coding agents. https://github.com/Rayasurya/Skills
+- **IINA Zoom Controls** (Open source). Keyboard shortcuts that zoom letterboxed video in the IINA player. https://github.com/Rayasurya/iina-zoom-controls
+
+## Skills
+
+Product design, UX research, Interaction design, AI product design and multi-agent UX, Prototyping in code (React), Design systems, Motion design, Prompt engineering and AI-augmented workflows.
+
+## Tools
+
+Figma, FigJam, React, Adobe Creative Suite, DaVinci Resolve, Blender, ComfyUI, Midjourney, Stable Diffusion, Kling AI, ElevenLabs.
+
+## Certifications
+
+- Google UX Design Professional Certificate (Coursera)
+- Google AI Foundations Certificate (Coursera)
+
+## Writing
+
+- [The UX of Indian temples](https://rayasurya.com/blog/ux-of-indian-temples)
+- [The UX of Indian temples, part 2: stone Wikipedia](https://rayasurya.com/blog/ux-of-indian-temples-2-stone-wikipedia)
+- [The UX of life](https://rayasurya.com/blog/the-ux-of-life)
+
+## Contact
+
+Email raya.work.ux@gmail.com or book a call at https://cal.com/rayasurya. Raya replies personally.

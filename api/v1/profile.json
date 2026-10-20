@@ -1,0 +1,103 @@
+{
+  "name": "Raya Surya",
+  "title": "Product designer and prototyper",
+  "location": "India",
+  "summary": "Raya Surya is a product designer who designs AI products and builds working prototypes of them in code. The work centres on trust: what a product shows when its AI is uncertain or wrong, where a person must stay in control, and how to prove a design works instead of asserting it. Background in psychology.",
+  "current_role": "Product Designer at nference (current). Employer work is confidential and is not shown on this site.",
+  "email": "raya.work.ux@gmail.com",
+  "booking": "https://cal.com/rayasurya",
+  "site": "https://rayasurya.com",
+  "languages": [
+    "English",
+    "Tamil",
+    "Telugu",
+    "Hindi"
+  ],
+  "education": "B.Sc. Psychology, DG Vaishnav College, Chennai (2020 to 2023)",
+  "certifications": [
+    "Google UX Design Professional Certificate (Coursera)",
+    "Google AI Foundations Certificate (Coursera)"
+  ],
+  "skills": [
+    "Product design",
+    "UX research",
+    "Interaction design",
+    "AI product design and multi-agent UX",
+    "Prototyping in code (React)",
+    "Design systems",
+    "Motion design",
+    "Prompt engineering and AI-augmented workflows"
+  ],
+  "tools": [
+    "Figma",
+    "FigJam",
+    "React",
+    "Adobe Creative Suite",
+    "DaVinci Resolve",
+    "Blender",
+    "ComfyUI",
+    "Midjourney",
+    "Stable Diffusion",
+    "Kling AI",
+    "ElevenLabs"
+  ],
+  "experience": [
+    {
+      "role": "Product Designer",
+      "company": "nference",
+      "when": "current",
+      "note": "Employer work is confidential and is not shown on this site."
+    },
+    {
+      "role": "Jr Product Designer",
+      "company": "Togepe",
+      "when": "2024",
+      "note": "15+ design projects across product inventory, healthcare data and a conversational AI chatbot."
+    },
+    {
+      "role": "Digital Marketing Executive",
+      "company": "Excel Prodigy",
+      "when": "2022 to 2024",
+      "note": "Content and video marketing; taught self UX design in this period."
+    },
+    {
+      "role": "Designer",
+      "company": "Talentpepz",
+      "when": "2020 to 2022",
+      "note": "Marketing materials and video content."
+    }
+  ],
+  "labs": [
+    {
+      "name": "Any Downloader",
+      "status": "Live on the Chrome Web Store",
+      "summary": "Detects the media a page has already served to your browser and saves it.",
+      "url": "https://chromewebstore.google.com/detail/dpekkpbffjfccnpnajechblepbopihfc"
+    },
+    {
+      "name": "Audio Shelf",
+      "status": "Coming soon",
+      "summary": "A private, local-first book-to-audio app for the Mac.",
+      "url": null
+    },
+    {
+      "name": "CrawlerBot",
+      "status": "Coming soon",
+      "summary": "An AI-readability auditor that scores how legible a site is to AI agents.",
+      "url": null
+    },
+    {
+      "name": "Agent Skills",
+      "status": "Open source",
+      "summary": "The rulebook Raya uses to direct AI coding agents.",
+      "url": "https://github.com/Rayasurya/Skills"
+    },
+    {
+      "name": "IINA Zoom Controls",
+      "status": "Open source",
+      "summary": "Keyboard shortcuts that zoom letterboxed video in the IINA player.",
+      "url": "https://github.com/Rayasurya/iina-zoom-controls"
+    }
+  ],
+  "updated": "19 October 2026"
+}

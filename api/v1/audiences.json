@@ -1,0 +1,56 @@
+[
+  {
+    "id": "hiring",
+    "who": "Hiring manager",
+    "goal": "See if Raya fits your role.",
+    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm hiring for the role of {role|product designer} at {company|my company}. Tell me which of Raya Surya's work is most relevant, with links, where Raya looks strongest, what I should probe, and three interview questions.",
+    "focus": [
+      "What the work shows Raya is good at",
+      "Case studies, newest first"
+    ]
+  },
+  {
+    "id": "recruiter",
+    "who": "Recruiter",
+    "goal": "Get a short profile to share.",
+    "prompt": "Read https://rayasurya.github.io/llms-full.txt. Write a short profile of Raya Surya for a hiring manager: current role, focus, the three strongest case studies with links, and how to get in touch.",
+    "focus": [
+      "At a glance",
+      "Experience",
+      "Contact"
+    ]
+  },
+  {
+    "id": "founder",
+    "who": "Founder",
+    "goal": "See if Raya can design your product.",
+    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm building {product|an AI product}. What has Raya Surya designed and built that is closest to it? Could Raya design and prototype it? Draft a short email I can send Raya.",
+    "focus": [
+      "Case studies, newest first",
+      "Labs: tools Raya builds and ships",
+      "Contact"
+    ]
+  },
+  {
+    "id": "designer",
+    "who": "Designer",
+    "goal": "Learn how Raya works.",
+    "prompt": "Read https://rayasurya.github.io/llms-full.txt. I'm a designer. Explain how Raya Surya designs AI products people can trust, using the case studies, and give me three ideas I can use in my own work.",
+    "focus": [
+      "What the work shows Raya is good at",
+      "Case studies, newest first",
+      "Writing"
+    ]
+  },
+  {
+    "id": "curious",
+    "who": "Just curious",
+    "goal": "Ask anything about Raya.",
+    "prompt": "Read https://rayasurya.github.io/llms-full.txt. Tell me who Raya Surya is, what Raya builds, and the one project I should look at first.",
+    "focus": [
+      "At a glance",
+      "Side project",
+      "Labs: tools Raya builds and ships"
+    ]
+  }
+]
