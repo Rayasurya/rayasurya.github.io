@@ -2,7 +2,7 @@
 
 > Raya Surya is a product designer who designs AI products and builds working prototypes of them in code. The work centres on trust: what a product shows when its AI is uncertain or wrong, where a person must stay in control, and how to prove a design works instead of asserting it. Background in psychology.
 
-Updated 19 October 2026. For the whole picture in one file, read https://rayasurya.github.io/llms-full.txt. Every page below is Markdown. People can read the same work at https://rayasurya.com.
+Updated 9 November 2026. For the whole picture in one file, read https://rayasurya.github.io/llms-full.txt. Every page below is Markdown. People can read the same work at https://rayasurya.com.
 
 ## Start here
 
@@ -12,6 +12,7 @@ Updated 19 October 2026. For the whole picture in one file, read https://rayasur
 
 ## Case studies
 
+- [Pip](https://rayasurya.github.io/projects/pip.md): A desk pet that reads a room through its air, with no camera and no microphone. (October to November 2026)
 - [Floor](https://rayasurya.github.io/projects/floor.md): A tool that shows where goods can legally go in a shared warehouse, given what sits next to them. (September 2026)
 - [Photo Memory Assistant](https://rayasurya.github.io/photos-assistant.md): AI search for a personal photo library, designed around what it does when it is confidently wrong. (September 2026)
 - [WinnowAI](https://rayasurya.github.io/projects/winnowai.md): A multi-agent AI workspace that drug-safety scientists can follow, question and sign off on. (2026)

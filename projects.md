@@ -2,6 +2,7 @@
 
 Newest first. Each case study is also a Markdown page.
 
+- [Pip](https://rayasurya.github.io/projects/pip.md) (October to November 2026, Hardware experiment, built by hand, working on a wall): A desk pet that reads a room through its air, with no camera and no microphone.
 - [Floor](https://rayasurya.github.io/projects/floor.md) (September 2026, Product design take-home, working prototype): A tool that shows where goods can legally go in a shared warehouse, given what sits next to them.
 - [Photo Memory Assistant](https://rayasurya.github.io/photos-assistant.md) (September 2026, Product design take-home, 2 days, working prototype): AI search for a personal photo library, designed around what it does when it is confidently wrong.
 - [WinnowAI](https://rayasurya.github.io/projects/winnowai.md) (2026, AI product design, working prototype (version 8)): A multi-agent AI workspace that drug-safety scientists can follow, question and sign off on.
